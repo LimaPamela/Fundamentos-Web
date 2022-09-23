@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Patrick+Hand&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+
+/* Estilos da página index.html */
+
+.center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+
+#menu li {
+
+  list-style:none;
+  display:inline; /*itens soltos dentro da lista */
+  padding: 15px;
+  font-size: 20px;
+}
+
+#menu li a{
+text-decoration: none;
+font-size: 20px;
+color:black;
+}
+
+#menu li a:hover {
+  color:grey;
+}
+
+/* .perfil {
+display: flex;
+width: 90vw;
+margin: 0 auto; para ficar no meio 
+padding: 20px;
+text-align: justify;
+flex-flow: nowrap;
+justify-content: center;
+align-items: center;
+} */
+
+.foto {
+  width:200px;
+  height:200px;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.video {
+  width:400px;
+  height:300px;
+  margin-bottom: 50px;
+}
+
+.rodape{
+  font-size: 14px;
+  text-align: center;
+  padding: 4px;
+}
+.tm-social{
+  width:30px;
+  height:30px;
+  padding: 4px;
+}
+
+
+/* Estilos da página contato.html */
+h3 {
+  font-size: 28px;
+}
+.ml-50 {
+  margin-left:50px;
+margin-bottom: 50px;
+}
+
+.mapa{
+  width:400px;
+  height:200px;
+}
