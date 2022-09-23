@@ -9,44 +9,52 @@
   
 </head>
 <body>
-  <ul id="menu">
-    <li>
-      <a href="index.html">Home</a>
-    </li>
-    <li>
-      <a href="contato.html">Contato</a>
-      </li>
-  </ul>
-  <h3 class="center"> Entre em contato comigo</h3>
-  <div class="container">
-    <div>
-      
-      <form>
-        <label for="nome"> Nome:</form><br>
-        <input type="text" id="nome">
-          <br>
-          <br>
-        <label for="email"> E-mail:</form><br>
-        <input type="text" id="email">
-        <br>
-        <br>
-        <label for="assunto"> Assunto:</form> <br>
-        <textarea name="assunto" id="assunto" cols="30" rows="7"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-      </form>
-    </div>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a></li>
+      <li><a href="/contato.html" class="disabled">Contato</a></li>
+    </ul>
+  </nav>
 
-    <div class="ml-50">
-       
-      <p> Casa das Rosas</p> <p>Av. Paulista 37- Paraíso, SP</p>
-      <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.924882495717!2d-46.645207199999994!3d-23.5711412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5996204bba01%3A0x1d4b89c063257237!2sCasa%20das%20Rosas%20-%20Espa%C3%A7o%20Haroldo%20de%20Campos%20de%20Poesia%20e%20Literatura!5e0!3m2!1spt-BR!2sbr!4v1663862857473!5m2!1spt-BR!2sbr" style="border:3;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
+  <hr>
+  <main class="contato">
+    <section class="formulario">
+      <h3>Contato</h3>
+      <br>
+      <form>
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" placeholder="Insira o seu nome completo">
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="text" placeholder="Insira o seu e-mail">
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea rows="4" cols="10" placeholder="Deixe uma mensagem"></textarea>
+        </div>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section>
+      <h3>Endereço</h2>
+        <br>
+      <div class="endereco">
+        <p>Casa das Rosas, Av. Paulista 37 Paraíso, SP - Brasil</p>
+      </div>
+
+      <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.924882495717!2d-46.645207199999994!3d-23.5711412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5996204bba01%3A0x1d4b89c063257237!2sCasa%20das%20Rosas%20-%20Espa%C3%A7o%20Haroldo%20de%20Campos%20de%20Poesia%20e%20Literatura!5e0!3m2!1spt-BR!2sbr!4v1663862857473!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
   <hr>
   <footer >
-
+  
     <div class="container">
       <a href="https://github.com/LimaPamela" target="_blank">
         <img class="tm-social" src="assets/img/github.png" alt="github"></a>
@@ -59,5 +67,6 @@
   </p>
   </footer>
   </hr>
+
 </body>
 </html>

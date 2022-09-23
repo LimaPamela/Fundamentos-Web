@@ -1,6 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Patrick+Hand&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
 
 /* Estilos da página index.html */
+:root {
+  --bg-background: #FAFCE0;
+  --purple: #4A314D;
+  --purple-disabled: #6B6570;
+  --dark-purple: #1A090D;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-background);
+}
+
+p {
+  margin-bottom: .750rem;
+}
+
+main {
+  width: 70vw;
+  margin: 0 auto;
+  flex-flow: nowrap;
+  justify-content: center;
+}
+
+.perfil {
+  display: flex;
+  background-color: #BA87B8;
+  padding: 20px;
+  border-radius: 16px;
+  align-items: center;
+}
 
 .center {
   text-align: center;
@@ -13,53 +47,89 @@
   align-items: center;
 }
 
+h1, h2 {
+  color: #1A090D;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
 h1 {
   font-size: 36px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 2rem;
 }
 h2 {
   font-size: 28px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-#menu li {
+hr {
+  width: 60vw;
+  margin: 2.5rem auto;
+  height: 2px;
+  border: none;
+  background-color: var(--purple-disabled);
+}
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
 
+nav {
+  text-decoration: none;
+  display: flex;
+  list-style:none;
+  font-size: 20px;
+  width: 100vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 1.25rem 1rem;
+}
+
+.disabled {
+  color:black;
+  transition: text-shadow .2s ease-in-out;
+}
+
+li {
   list-style:none;
   display:inline; /*itens soltos dentro da lista */
-  padding: 15px;
+  padding: 10px;
   font-size: 20px;
 }
 
-#menu li a{
-text-decoration: none;
-font-size: 20px;
-color:black;
+a {
+  color:black;
+  display:inline;
+  list-style:none;
+  font-size: 20px;
+  text-decoration: none;
+  transition: text-shadow .2s ease-in-out;
 }
 
-#menu li a:hover {
+a:hover {
+  transition: text-shadow .2s ease-in-out;
   color:grey;
 }
-
-/* .perfil {
-display: flex;
-width: 90vw;
-margin: 0 auto; para ficar no meio 
-padding: 20px;
-text-align: justify;
-flex-flow: nowrap;
-justify-content: center;
-align-items: center;
-} */
 
 .foto {
   width:200px;
   height:200px;
   padding: 20px;
   border-radius: 100px;
+  aspect-ratio: 1;
 }
 
 .video {
-  width:400px;
-  height:300px;
-  margin-bottom: 50px;
+  width: 65vw;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  margin-top: 2rem;
 }
 
 .rodape{
@@ -67,6 +137,7 @@ align-items: center;
   text-align: center;
   padding: 4px;
 }
+
 .tm-social{
   width:30px;
   height:30px;
@@ -75,15 +146,64 @@ align-items: center;
 
 
 /* Estilos da página contato.html */
+
 h3 {
+  color: #1A090D;
   font-size: 28px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: .5rem 1rem;
 }
+
+.contato {
+  display: flex;
+  gap: 16rem;
+  justify-content: center;
+  font-size: 16px;
+}
+.endereco {
+  display: flex;
+  color: black;
+  font-size: 16px;
+}
+
 .ml-50 {
-  margin-left:50px;
+margin-left:50px;
 margin-bottom: 50px;
 }
 
 .mapa{
   width:400px;
-  height:200px;
+  height:400px;
+}
+
+.formulario{
+  width: 100px;
+}
+
+input {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+input, textarea, button {
+  width: 250px;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input, textarea {
+  border: 1px solid purple;
+}
+
+button {
+background: transparent;
+cursor: pointer;
+}
+
+button:hover {
+  background: purple;
+  color: #fff;
 }
