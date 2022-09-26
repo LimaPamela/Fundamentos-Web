@@ -183,7 +183,7 @@ margin-bottom: 50px;
 
 input {
   width: 100px;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 input, textarea, button {
